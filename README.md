@@ -18,7 +18,7 @@ console.log(romanToNumber('M̅̅̅̅X̅̅̅̅̅V̅̅̅̅M̅̅̅M̅̅̅C̅̅̅X̅
 
 ### numberToRoman(number)
 
-Input a number *e.g.* 123456, return a string containing the appropriate Roman numeral, in this case `'C̅X̅X̅MMMCDLVI'`. Numbers must be positive integers or an exception will be thrown. Other than that, numbers may be arbitrarily large, up to and including `Number.MAX_VALUE`, and accurate results will be returned. Note that the Roman numeral representation will *not* be truncated after around 15 "digits" of precision, you'll get the whole thing.
+Input a number *e.g.* `123456`, return a string containing the appropriate Roman numeral, in this case `'C̅X̅X̅MMMCDLVI'`. Numbers must be positive integers or an exception will be thrown. Other than that, numbers may be arbitrarily large, up to and including `Number.MAX_VALUE`, and accurate results will be returned. Note that the Roman numeral representation will *not* be truncated after around 15 "digits" of precision, you'll get the whole thing.
 
 ### arabicToRoman(string)
 
