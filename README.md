@@ -5,13 +5,19 @@ Roman numerals parsing/serialisation package which supports the overbar extensio
 ## Example
 
 ```js
-const { numberToRoman, romanToNumber } = require('./index.js')
+const { numberToRoman, romanToNumber } = require('big-roman')
 
 console.log(numberToRoman(Number.MAX_SAFE_INTEGER))
 // 'M̅̅̅̅X̅̅̅̅̅V̅̅̅̅M̅̅̅M̅̅̅C̅̅̅X̅̅̅C̅̅̅M̅̅X̅̅̅C̅̅C̅̅L̅̅M̅V̅̅D̅C̅C̅X̅L̅CMXCI'
 
 console.log(romanToNumber('M̅̅̅̅X̅̅̅̅̅V̅̅̅̅M̅̅̅M̅̅̅C̅̅̅X̅̅̅C̅̅̅M̅̅X̅̅̅C̅̅C̅̅L̅̅M̅V̅̅D̅C̅C̅X̅L̅CMXCI'))
 // '9007199254740991'
+```
+
+## Installation
+
+```sh
+npm install big-roman
 ```
 
 ## API
