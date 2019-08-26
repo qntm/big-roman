@@ -13,7 +13,7 @@ Ordinarily, to express an Arabic digit 4 in a Roman numeral, we take the Roman "
 
 This means it's impossible to express the number 4,000 or any higher number using a Roman numeral. The largest number expressible as a Roman numeral is 3,999 = MMMCMXCIX.
 
-The overbar extension introduces the overbar or *vinculum*, U+0305 COMBINING OVERLINE (in HTML or Markdown, this can be written as `&amp;#x0305;`; as a JavaScript string, write `'\u0305'`.). The overbar means "multiply by 1,000". And the pattern continues as follows:
+The overbar extension introduces the overbar or *vinculum*, U+0305 COMBINING OVERLINE (in HTML or Markdown, this can be written as `&#x0305;`; as a JavaScript string, write `'\u0305'`.). The overbar means "multiply by 1,000". And the pattern continues as follows:
 
 * In the 1,000s place, 1 is M and 5 is V&#x0305;, so 4 is MV&#x0305;.
 * In the 10,000s place, 1 is X&#x0305; and 5 is L&#x0305;, so 4 is X&#x0305;L&#x0305;.
