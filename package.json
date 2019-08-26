@@ -1,19 +1,27 @@
 {
   "name": "big-roman",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Convert arbitrary-sized Roman numerals to and from Arabic numerals and numbers",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "roman",
+    "arabic",
+    "numerals",
+    "bigint",
+    "conversion"
+  ],
   "scripts": {
     "jasmine": "jasmine",
     "standard": "standard",
-    "test": "npm run standard && npm run jasmine -- test.js"
+    "test": "npm run jasmine -- test.js"
   },
   "author": "qntm",
   "license": "MIT",
+  "dependencies": {
+    "precise-float": "0.0.0"
+  },
   "devDependencies": {
     "jasmine": "^3.4.0",
-    "precise-float": "0.0.0",
     "standard": "^14.0.0"
   }
 }

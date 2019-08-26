@@ -32,32 +32,33 @@ const arabicToRomanDigit = (arabicDigit, powerOfTen) => {
     .replace(new RegExp(badThousand, 'g'), goodThousand)
 }
 
-const arabicToRoman = arabicNumeral => arabicNumeral
-  .split('')
-  .map((arabicDigit, i, arabicDigits) =>
-    arabicToRomanDigit(arabicDigit, arabicDigits.length - i - 1)
-  )
-  .join('')
-
-const numberToRoman = (...args) => {
-  if (args.length !== 1) {
-    throw Error(`Expected 1 argument, got ${args.length}`)
+const arabicToRoman = arabicNumeral => {
+  if (typeof arabicNumeral !== 'string' || arabicNumeral === '') {
+    throw Error(`Not a non-empty string: ${arabicNumeral}`)
   }
+  return arabicNumeral
+    .split('')
+    .map((arabicDigit, i, arabicDigits) =>
+      arabicToRomanDigit(arabicDigit, arabicDigits.length - i - 1)
+    )
+    .join('')
+}
 
-  const number = args[0]
+const bigIntToRoman = bigInt => {
+  if (typeof bigInt !== 'bigint' || bigInt <= BigInt(0)) {
+    throw Error(`Not a positive BigInt: ${bigInt}`)
+  }
+  return arabicToRoman(bigInt.toString())
+}
+
+const numberToRoman = number => {
   if (!Number.isInteger(number) || number <= 0) {
     throw Error(`Not a positive integer: ${number}`)
   }
-
   return arabicToRoman(preciseFloat.stringify(number))
 }
 
-const romanToArabic = (...args) => {
-  if (args.length !== 1) {
-    throw Error(`Expected 1 argument, got ${args.length}`)
-  }
-
-  const romanNumeral = args[0]
+const romanToArabic = romanNumeral => {
   if (typeof romanNumeral !== 'string' || romanNumeral === '') {
     throw Error(`Not a non-empty string: ${romanNumeral}`)
   }
@@ -112,12 +113,17 @@ const romanToArabic = (...args) => {
   return arabicDigits.join('')
 }
 
+const romanToBigInt = romanNumeral =>
+  BigInt(romanToArabic(romanNumeral))
+
 const romanToNumber = romanNumeral =>
   Number.parseInt(romanToArabic(romanNumeral), 10)
 
 module.exports = {
   arabicToRoman,
+  bigIntToRoman,
   numberToRoman,
   romanToArabic,
+  romanToBigInt,
   romanToNumber
 }
