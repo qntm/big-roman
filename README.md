@@ -1,6 +1,6 @@
 # big-roman
 
-Roman numerals parsing/serialisation package which supports the overbar extension for numbers 4,000 (MV&#x0305;) and above. Supports arbitrarily large numbers and `BigInt`s.
+Roman numerals parsing/serialisation package which supports the overbar extension for numbers 4,000 (MV&#x0305;) and above. Supports arbitrarily large integer floats and `BigInt`s.
 
 ## Example
 
