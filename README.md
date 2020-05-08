@@ -1,6 +1,6 @@
 # big-roman
 
-Roman numerals parsing/serialisation package which supports the overbar extension for numbers 4,000 (MV&#x0305;) and above. Supports arbitrarily large numbers and `BigInt`s.
+Roman numerals parsing/serialisation package which supports the overbar extension for numbers 4,000 (MV&#x0305;) and above. Supports arbitrarily large integer floats and `BigInt`s.
 
 ## Example
 
@@ -11,7 +11,7 @@ console.log(numberToRoman(Number.MAX_SAFE_INTEGER))
 // 'M̅̅̅̅X̅̅̅̅̅V̅̅̅̅M̅̅̅M̅̅̅C̅̅̅X̅̅̅C̅̅̅M̅̅X̅̅̅C̅̅C̅̅L̅̅M̅V̅̅D̅C̅C̅X̅L̅CMXCI'
 
 console.log(romanToNumber('M̅̅̅̅X̅̅̅̅̅V̅̅̅̅M̅̅̅M̅̅̅C̅̅̅X̅̅̅C̅̅̅M̅̅X̅̅̅C̅̅C̅̅L̅̅M̅V̅̅D̅C̅C̅X̅L̅CMXCI'))
-// '9007199254740991'
+// 9007199254740991
 ```
 
 ## Installation
