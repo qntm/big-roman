@@ -1,6 +1,6 @@
 {
   "name": "big-roman",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Convert arbitrary-sized Roman numerals to and from Arabic numerals and numbers",
   "main": "index.js",
   "keywords": [
