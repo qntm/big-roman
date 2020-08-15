@@ -23,7 +23,7 @@
   "author": "qntm",
   "license": "MIT",
   "dependencies": {
-    "precise-float": "0.0.0"
+    "precise-float": "1.0.0"
   },
   "devDependencies": {
     "jasmine": "^3.4.0",
