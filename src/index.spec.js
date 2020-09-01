@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-env jasmine */
+/* global BigInt */
 
 const {
   arabicToRoman,
@@ -9,7 +10,7 @@ const {
   romanToArabic,
   romanToBigInt,
   romanToNumber
-} = require('./index')
+} = require('.')
 
 describe('roman', () => {
   describe('arabicToRoman', () => {
