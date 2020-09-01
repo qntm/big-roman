@@ -1,5 +1,7 @@
 'use strict'
 
+/* global BigInt */
+
 const bar = '\u0305'
 
 const banks = [

@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-env jasmine */
+/* global BigInt */
 
 const {
   arabicToRoman,

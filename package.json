@@ -16,9 +16,7 @@
     "conversion"
   ],
   "scripts": {
-    "jasmine": "jasmine",
-    "standard": "standard",
-    "test": "npm run jasmine -- src/index.spec.js"
+    "test": "standard && jasmine src/index.spec.js"
   },
   "author": "qntm",
   "license": "MIT",
