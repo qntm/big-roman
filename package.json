@@ -1,13 +1,13 @@
 {
   "name": "big-roman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert arbitrary-sized Roman numerals to and from Arabic numerals and numbers",
   "homepage": "https://github.com/qntm/big-roman",
   "repository": {
     "type": "git",
     "url": "git://github.com/qntm/big-roman.git"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
     "roman",
     "arabic",
@@ -18,15 +18,17 @@
   "scripts": {
     "jasmine": "jasmine",
     "standard": "standard",
-    "test": "npm run jasmine -- test.js"
+    "test": "npm run jasmine -- src/index.spec.js"
   },
   "author": "qntm",
   "license": "MIT",
-  "dependencies": {
-    "precise-float": "0.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jasmine": "^3.4.0",
     "standard": "^14.0.0"
-  }
+  },
+  "files": [
+    "src",
+    "!src/**/*.spec.js"
+  ]
 }

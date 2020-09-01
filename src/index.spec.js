@@ -9,7 +9,7 @@ const {
   romanToArabic,
   romanToBigInt,
   romanToNumber
-} = require('./index')
+} = require('.')
 
 describe('roman', () => {
   describe('arabicToRoman', () => {

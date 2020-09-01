@@ -1,7 +1,5 @@
 'use strict'
 
-const preciseFloat = require('precise-float')
-
 const bar = '\u0305'
 
 const banks = [
@@ -55,7 +53,7 @@ const numberToRoman = number => {
   if (!Number.isInteger(number) || number <= 0) {
     throw Error(`Not a positive integer: ${number}`)
   }
-  return arabicToRoman(preciseFloat.stringify(number))
+  return bigIntToRoman(BigInt(number))
 }
 
 const romanToArabic = romanNumeral => {
