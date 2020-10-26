@@ -23,7 +23,7 @@
   "dependencies": {},
   "devDependencies": {
     "jasmine": "^3.4.0",
-    "standard": "^14.0.0"
+    "standard": "^15.0.0"
   },
   "files": [
     "src",
