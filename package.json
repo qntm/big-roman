@@ -16,6 +16,7 @@
     "conversion"
   ],
   "scripts": {
+    "postpublish": "npm version patch && git push",
     "test": "standard && jasmine src/index.spec.js"
   },
   "author": "qntm",
