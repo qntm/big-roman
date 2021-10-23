@@ -1,6 +1,6 @@
 {
   "name": "big-roman",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Convert arbitrary-sized Roman numerals to and from Arabic numerals and numbers",
   "homepage": "https://github.com/qntm/big-roman",
   "repository": {
@@ -8,6 +8,7 @@
     "url": "git://github.com/qntm/big-roman.git"
   },
   "main": "src/index.js",
+  "type": "module",
   "keywords": [
     "roman",
     "arabic",
@@ -16,17 +17,20 @@
     "conversion"
   ],
   "scripts": {
-    "test": "standard && jasmine src/index.spec.js"
+    "mocha": "c8 --100 mocha",
+    "postpublish": "npm version patch && git push",
+    "standard": "standard",
+    "test": "npm run standard && npm run mocha"
   },
   "author": "qntm",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "jasmine": "^3.4.0",
+    "c8": "^7.10.0",
+    "mocha": "^9.1.3",
     "standard": "^16.0.1"
   },
   "files": [
-    "src",
-    "!src/**/*.spec.js"
+    "src"
   ]
 }

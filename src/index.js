@@ -1,7 +1,3 @@
-'use strict'
-
-/* global BigInt */
-
 const bar = '\u0305'
 
 const banks = [
@@ -119,7 +115,7 @@ const romanToBigInt = romanNumeral =>
 const romanToNumber = romanNumeral =>
   Number.parseInt(romanToArabic(romanNumeral), 10)
 
-module.exports = {
+export {
   arabicToRoman,
   bigIntToRoman,
   numberToRoman,
