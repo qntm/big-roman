@@ -1,6 +1,6 @@
 {
   "name": "big-roman",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Convert arbitrary-sized Roman numerals to and from Arabic numerals and numbers",
   "homepage": "https://github.com/qntm/big-roman",
   "repository": {
